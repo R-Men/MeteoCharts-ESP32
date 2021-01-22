@@ -1,0 +1,6 @@
+# Visual Studio
+!.vscode/arduino.json
+.vscode/
+
+# Project
+conf.h
