@@ -1,0 +1,27 @@
+// THIS FILES GOES TO : MeteoCharts/conf.h 
+
+
+// Local Wi-Fi connection
+#define WIFI_SSID "Your_SSID"
+#define WIFI_PASSWD "Secret"
+#define IP { 192, 168, 1, 100 } 
+#define GATEWAY { 192, 168, 1, 1 }
+#define SUBNET { 255, 255, 255, 0 }
+#define PRIMARY_DNS { 192, 168, 1, 1 }
+#define SECONDARY_DNS { 8, 8, 8, 8 }
+
+// MeteoCharts Server Connection
+#define SERVER_IP { 0, 0, 0, 0 } // IP of your Webserver 
+#define DB_HOSTNAME "database-hostname.com"
+#define DB_PORT 1433
+#define DB_NAME "meteo_charts_database"
+#define DB_USER "username"
+#define DB_PASS "password"
+
+// infos
+#define LOCALIZATION "My_Sensor_Location" // 
+
+#define TIME_ZONE_1 "0.ch.pool.ntp.org"
+#define TIME_ZONE_2 "1.ch.pool.ntp.org"
+#define TIME_ZONE_3 "2.ch.pool.ntp.org"
+#define TIME_ZONE_FORMAT "CET-1CEST,M3.5.0,M10.5.0/3"

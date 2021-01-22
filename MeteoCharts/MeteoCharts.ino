@@ -13,12 +13,12 @@
 
 
 /* Put your SSID & Password */
-const char* ssid = SSID;  // Enter SSID here
-const char* password = PASSWD;  //Enter Password here
+const char* ssid = WIFI_SSID;  // Enter SSID here
+const char* password = WIFI_PASSWD;  //Enter Password here
 const IPAddress local_IP(IP);
 const IPAddress gateway(GATEWAY);
 const IPAddress subnet(SUBNET);
-const IPAddress primaryDNS(PRIMARY_DNS));   //optional
+const IPAddress primaryDNS(PRIMARY_DNS);   //optional
 const IPAddress secondaryDNS(SECONDARY_DNS); //optional
 
 // SQL
