@@ -3,6 +3,7 @@
 
 #include <WiFi.h>
 #include <HTTPClient.h>
+#include <ESP32Ping.h>
 // #include <DHT.h>
 #include <MySQL_Connection.h>
 #include <MySQL_Cursor.h>
@@ -293,6 +294,14 @@ void SetupWifi() {
   Serial.println("WiFi connected.");
   Serial.print("IP address : ");
   Serial.println(WiFi.localIP());
+
+  Serial.println("Pinging SQL Server");
+  bool ret = Ping.ping(DB_HOSTNAME);
+  float avg_time_ms = Ping.averageTime();
+  Serial.print("Ping : ");
+  Serial.print(ret);
+  Serial.print(" in ");
+  Serial.println(avg_time_ms);
 
   LEDTrigger(LED_BLUE, false);
 }
